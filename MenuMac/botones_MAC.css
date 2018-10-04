@@ -1,0 +1,31 @@
+ul{
+            list-style-type: none;   
+}
+ul li{
+            display: inline;
+}
+.botoncikos .oculto{
+
+            visibility:hidden;
+}
+.shadowhu:hover .oculto{
+
+            visibility:visible;
+} 
+li img{
+            width: 100px;
+            transition: width 2s;  
+}
+img:hover {
+            width: 200px;
+    
+}
+.botoncikos{
+            margin-top:60px;
+            
+}
+
+.linea{
+
+    display: inline;
+}
