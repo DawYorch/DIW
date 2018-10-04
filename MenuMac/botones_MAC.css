@@ -12,6 +12,10 @@ ul li{
 
             visibility:visible;
 } 
+.shadowhube:hover .oculto{
+
+    visibility:visible;
+}
 li img{
             width: 100px;
             transition: width 2s;  
@@ -21,11 +25,15 @@ img:hover {
     
 }
 .botoncikos{
-            margin-top:60px;
+    text-align:center;
+            padding:20px;
+            
             
 }
+.shadowhu, .shadowhube, .shaman{
 
-.linea{
+    font-size: 10px;
+    float:left;
 
-    display: inline;
 }
+
