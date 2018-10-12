@@ -1,0 +1,75 @@
+legend{
+	
+	margin:0 auto;
+	
+}
+
+.contenido{
+	
+	padding:25px;
+	
+}
+
+
+fieldset{
+	
+	background-color: lightyellow;
+	border: solid grey 2px;
+	
+}
+
+.principal{
+	
+	width: 50%;
+    padding: 10px;
+	font-family:arial;
+	margin:0 auto;
+
+}
+
+
+
+label{
+	
+  float:left;
+  margin-top:10px;
+  margin-left: 12px;
+	
+	
+}
+
+input, textarea{
+
+    width: 70%;
+    height: 50px;
+    resize: vertical;
+    transition: all 1.5s ease-in-out;
+	float:right;
+	margin-right: 5%;
+	
+}
+
+.submit{
+	
+	width: 70px;
+	
+	
+}
+
+input:invalid:hover,textarea:invalid:hover{
+    
+    border: 1px solid red;
+
+}
+
+input:valid:hover,textarea:valid:hover{
+
+    border: 1px solid aquamarine;
+    transform: scale(1.1);
+    transition-duration: 2s;
+
+}
+
+
+
+
