@@ -1,0 +1,49 @@
+.encabezado{
+
+    margin-left: 20%;
+    margin-top: 15px;
+
+}
+
+.lasenia{
+
+    margin-left: 2%;
+
+}
+
+.generalitat{
+
+    margin-right: 2%;
+
+}
+
+#alumno, #grupo, #profe, #horari, #fecha, #hora, #lloc{
+
+    float:right;
+
+}
+
+.row{
+
+    
+
+}
+
+div label{
+
+    width:35%;
+    float:left;
+   
+  }
+
+  div input{
+
+    width:60%;
+
+  }
+
+  .divlinea{
+
+    align-
+
+  }

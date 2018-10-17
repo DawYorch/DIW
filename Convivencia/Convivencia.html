@@ -34,31 +34,43 @@
 		
 <body>
 
-	<div class="folio">
+	<div class="container">
 
 				<div class="encabezado">
 				
-				 <img src="conselleria.jpg" alt="Conselleria" height="200" width="250"> 
-				 <img src="lasenia.png" alt="Conselleria" height="120" width="250">
-				 <div>C/No se que 34, 4567 Paiporta</div>	
+				 <img class="generalitat" src="generalitat.png" alt="Conselleria" height="200" width="375"> 
+				 <img class="lasenia" src="lasenia.png" alt="Conselleria" height="120" width="275">				
 				 
-				 </div>
+				</div>
+
+				<br>
+
 	 
-	 <h3>COMUNICACIÓ DE MESURES CORRECTORES</h3>
+	 <h1 class="jumbotron text-center">COMUNICACIÓ DE MESURES CORRECTORES</h1>
 	 
 	 <form onsubmit="return onSubmit(this)" >
-	 
-				<div>
-				<label>ALUMNE/A</label>
-				<input id="alumno" name="alumno" placeholder="Nom de l'alumne" pattern="[a-zA-Z]{4,255}">
-				</div>
 
-				<div>
-				<label>GRUP</label>
-				<input id="grupo" name="grupo" placeholder="Grup de l'alumne" pattern="[a-zA-Z]{4,255}">
-				</div>
+			<div class="row">
 
-			<br>
+			<div class="col-sm-4">
+
+					<div class="input-group mb-3">
+							<div class="input-group-prepend">
+							  <label class="input-group-text" id="inputGroup-sizing-default">Alumne/a</label>
+							</div>
+							<input id="alumno" name="alumno" placeholder="Grup de l'alumne/a" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+						  </div>
+
+					<div class="input-group mb-3">
+							<div class="input-group-prepend">
+								<span class="input-group-text" id="inputGroup-sizing-default">Grup</span>
+							</div>
+							<input id="grupo" name="grupo" placeholder="Grup de l'alumne" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+						  </div>		
+
+			</div>
+
+			<div class="col-sm-4">
 		
 				<div>
 				<label>PROFESSOR/A</label>
@@ -70,11 +82,13 @@
 				<input id="horari" name="horari" placeholder="Horari" pattern="[a-zA-Z]{4,255}">
 				</div>		
 
-		
-			<br>
+		    </div>
 			
+			<div class="col-sm-4">
+
+
 				<div>
-				<label>Data de l'incident</label>
+				<label>Data</label>
 				<input id="fecha" name="fecha" placeholder="" pattern="[a-zA-Z]{4,255}">
 				</div>
 
@@ -88,7 +102,9 @@
 				<input id="lloc" name="lloc" placeholder="" pattern="[a-zA-Z]{4,255}">
 				</div>	
 
-			<br>
+			</div>
+
+		</div>
 			
 				<div>
 				
