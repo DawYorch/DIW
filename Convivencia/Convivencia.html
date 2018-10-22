@@ -10,13 +10,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="convivencia.css" />
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
 		crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" media="screen" href="convivencia.css" />
 			
 			
 		<script>
@@ -34,7 +35,7 @@
 		
 <body>
 
-	<div class="container">
+	
 
 				<div class="encabezado">
 				
@@ -50,13 +51,19 @@
 	 
 	 <form onsubmit="return onSubmit(this)" >
 
-			<div class="row">
+
+		<div class="container">
+
+		<div class="row">
+
+
+
 
 			<div class="col-sm-4">
 
 					<div class="input-group mb-3">
 							<div class="input-group-prepend">
-							  <label class="input-group-text" id="inputGroup-sizing-default">Alumne/a</label>
+							  <span class="input-group-text" id="inputGroup-sizing-default">Alumne/a</span>
 							</div>
 							<input id="alumno" name="alumno" placeholder="Grup de l'alumne/a" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
 						  </div>
@@ -70,48 +77,57 @@
 
 			</div>
 
-			<div class="col-sm-4">
-		
-				<div>
-				<label>PROFESSOR/A</label>
-				<input id="profe" name="profe" placeholder="Nom del professor" pattern="[a-zA-Z]{4,255}">
-				</div>	
 
-				<div>
-				<label>Horari d'atenció</label>
-				<input id="horari" name="horari" placeholder="Horari" pattern="[a-zA-Z]{4,255}">
-				</div>		
-
-		    </div>
-			
 			<div class="col-sm-4">
 
+				<div class="input-group mb-3">
+						<div class="input-group-prepend">
+						  <span class="input-group-text" id="inputGroup-sizing-default">Professor/a</span>
+						</div>
+						<input id="profe" name="profe" placeholder="" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+					  </div>
 
-				<div>
-				<label>Data</label>
-				<input id="fecha" name="fecha" placeholder="" pattern="[a-zA-Z]{4,255}">
-				</div>
-
-				<div>
-				<label>Hora</label>
-				<input id="hora" name="hora" placeholder="" pattern="[a-zA-Z]{4,255}">
-				</div>
-
-				<div>
-				<label>Lloc</label>
-				<input id="lloc" name="lloc" placeholder="" pattern="[a-zA-Z]{4,255}">
-				</div>	
+				<div class="input-group mb-3">
+						<div class="input-group-prepend">
+							<span class="input-group-text" id="inputGroup-sizing-default">Horari d'atenció</span>
+						</div>
+						<input id="horari" name="horari" placeholder="" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+					  </div>		
 
 			</div>
 
+
+
+			<div class="col-sm-4">
+
+				<div class="input-group mb-3">
+						<div class="input-group-prepend">
+						  <span class="input-group-text" id="inputGroupDif">Data i hora de l'incident</span>
+						</div>
+						<input id="data" name="data" placeholder="" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+					  </div>
+
+				<div class="input-group mb-3">
+						<div class="input-group-prepend">
+							<span class="input-group-text" id="inputGroup-sizing-default">Lloc</span>
+						</div>
+						<input id="lloc" name="lloc" placeholder="" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+					  </div>		
+
+			</div>			
+
+
+
 		</div>
 			
-				<div>
+				<div class="col-sm-12">
 				
 					<p>	En aplicació de l'article 37 del decret 39/08 sobre drets i deure, es comunica al pare/mare de l'alumne	la imposició de la seguent mesura correctora:</p>
 					
 						<ol type="a">
-							<li>compareixença davant el cap d'estudis/director</li>
+
+							<li>compareixença davant el cap d'estudis/director</li><br>
+						
 							<li>retirada d'aparells electronics &#40;1&#41;</li>
 							<li>privaçio del temps de recreaçio el dies:<input id="privacion" name="privacion" placeholder="" pattern="[a-zA-Z]{4,255}"></li>
 							<li>realització de les següents tasques educadores:

@@ -1,19 +1,19 @@
 .encabezado{
 
-    margin-left: 20%;
-    margin-top: 15px;
+
 
 }
 
 .lasenia{
 
-    margin-left: 2%;
+    margin-left: 24%;
 
 }
 
 .generalitat{
 
-    margin-right: 2%;
+    margin-left: 16%;
+   
 
 }
 
@@ -44,6 +44,13 @@ div label{
 
   .divlinea{
 
-    align-
+   
+
+  }
+
+  #inputGroupDif{
+
+    font-size: 11px;
+  
 
   }
