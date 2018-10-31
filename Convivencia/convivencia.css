@@ -22,23 +22,30 @@
     float:right;
 
 }
+.falta{
+	
+/* 	display:inline;
+	float:left; */
+}
 
-.row{
+#botonera{
 
-    
+    margin: 0 auto;
+	
 
 }
 
 div label{
 
     width:35%;
-    float:left;
+    
    
   }
 
   div input{
 
-    width:60%;
+    
+	
 
   }
 
@@ -53,4 +60,4 @@ div label{
     font-size: 11px;
   
 
-  }
+}
