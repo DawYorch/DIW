@@ -23,7 +23,6 @@
 		<script>
 	
 				function onSubmit( form ){
-
 			    var data = JSON.stringify( $(form).serializeArray() ); //  <-----------
 			    console.log( data );
 			    return false; //don't submit
@@ -34,8 +33,6 @@
 		</head>
 		
 <body>
-
-	
 
 				<div class="encabezado">
 				
@@ -52,7 +49,7 @@
 	 <form onsubmit="return onSubmit(this)" >
 
 
-		<div class="container">
+	<div class="container">
 
 		<div class="row">
 
@@ -62,74 +59,101 @@
 			<div class="col-sm-4">
 
 					<div class="input-group mb-3">
+					
 							<div class="input-group-prepend">
 							  <span class="input-group-text" id="inputGroup-sizing-default">Alumne/a</span>
 							</div>
+							
 							<input id="alumno" name="alumno" placeholder="Grup de l'alumne/a" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-						  </div>
+					</div>
 
 					<div class="input-group mb-3">
+					
 							<div class="input-group-prepend">
 								<span class="input-group-text" id="inputGroup-sizing-default">Grup</span>
 							</div>
+							
 							<input id="grupo" name="grupo" placeholder="Grup de l'alumne" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-						  </div>		
+				    </div>		
 
 			</div>
 
 
-			<div class="col-sm-4">
+					<div class="col-sm-4">
 
-				<div class="input-group mb-3">
-						<div class="input-group-prepend">
-						  <span class="input-group-text" id="inputGroup-sizing-default">Professor/a</span>
-						</div>
-						<input id="profe" name="profe" placeholder="" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-					  </div>
+									<div class="input-group mb-3">
+									
+											<div class="input-group-prepend">						
+											  <span class="input-group-text" id="inputGroup-sizing-default">Professor/a</span>
+											</div>
+											
+											<input id="profe" name="profe" placeholder="" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+									</div>
 
-				<div class="input-group mb-3">
-						<div class="input-group-prepend">
-							<span class="input-group-text" id="inputGroup-sizing-default">Horari d'atenció</span>
-						</div>
-						<input id="horari" name="horari" placeholder="" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-					  </div>		
+												<div class="input-group mb-3">
+												
+														<div class="input-group-prepend">
+															<span class="input-group-text" id="inputGroup-sizing-default">Horari d'atenció</span>
+														</div>
+														
+														<input id="horari" name="horari" placeholder="" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+												</div>		
 
-			</div>
+					</div>
 
 
 
-			<div class="col-sm-4">
+							<div class="col-sm-4">
 
-				<div class="input-group mb-3">
-						<div class="input-group-prepend">
-						  <span class="input-group-text" id="inputGroupDif">Data i hora de l'incident</span>
-						</div>
-						<input id="data" name="data" placeholder="" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-					  </div>
+								<div class="input-group mb-3">
+								
+										<div class="input-group-prepend">
+										  <span class="input-group-text" id="inputGroupDif">Data i hora de l'incident</span>
+										</div>
+										
+										<input id="data" name="data" placeholder="" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+								</div>
 
-				<div class="input-group mb-3">
-						<div class="input-group-prepend">
-							<span class="input-group-text" id="inputGroup-sizing-default">Lloc</span>
-						</div>
-						<input id="lloc" name="lloc" placeholder="" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-					  </div>		
+								<div class="input-group mb-3">
+								
+										<div class="input-group-prepend">
+											<span class="input-group-text" id="inputGroup-sizing-default">Lloc</span>
+										</div>
+										
+										<input id="lloc" name="lloc" placeholder="" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+								</div>		
 
-			</div>			
+							</div>	
+			
+
+						
+				<div id="botonera">
+				
+				<br>			
+				<input id="lleu" type="button" class="btn btn-warning" value="LLEU" onclick="lleu()">
+								
+				<input id="greu" type="button" class="btn btn-danger" value="GREU" onclick="greu()">
+								
+				</div>
 
 
 
 		</div>
 			
+		<br><br>	
+			
+		<div id="lleu">
 				<div class="col-sm-12">
 				
 					<p>	En aplicació de l'article 37 del decret 39/08 sobre drets i deure, es comunica al pare/mare de l'alumne	la imposició de la seguent mesura correctora:</p>
 					
-						<ol type="a">
-
-							<li>compareixença davant el cap d'estudis/director</li><br>
+						<div class="form-check">
+							<input name="opA" class="form-check-input" type="checkbox" value="" id="opA">
+							<label class="form-check-label" for="opA">a) compareixença davant el cap d'estudis/director</label><br>
 						
-							<li>retirada d'aparells electronics &#40;1&#41;</li>
-							<li>privaçio del temps de recreaçio el dies:<input id="privacion" name="privacion" placeholder="" pattern="[a-zA-Z]{4,255}"></li>
+							<input name="opB" class="form-check-input" type="checkbox" value="" id="opB">
+							<label class="form-check-label" for="opB">b) retirada d'aparells electronics &#40;1&#41;</label><br>
+							<!-- <li>privaçio del temps de recreaçio el dies:<input id="privacion" name="privacion" placeholder="" pattern="[a-zA-Z]{4,255}"></li>
 							<li>realització de les següents tasques educadores:
 							<br>
 							<input type="text" name="taskes" placeholder="">
@@ -140,14 +164,14 @@
 							<input type="text" name="suspension_desde" placeholder="">fins a<input name="suspension_hasta" type="text" placeholder=""> &#40;2&#41; :</li>               
 							<li>suspensió del dret de l'assistència a les classes de:<input type="text" name="clase" placeholder="">
 							<br>		
-							des de:<input name="asist_desde" type="text" placeholder="">fins a:<input name="asist_hasta" type="text" placeholder=""> &#40;2&#41;</li>
-						</ol>
+							des de:<input name="asist_desde" type="text" placeholder="">fins a:<input name="asist_hasta" type="text" placeholder=""> &#40;2&#41;</li> -->
+						
+						</div>	
 					
-					<br/>
 					
 				</div>	
-			
-							<div>
+		</div>	
+			<!-- 				<div>
 							
 							<label>Descripció de l'incident:</label>
 							<textarea name="descripcio" placeholder=""></textarea>
@@ -199,11 +223,12 @@
 														
 							</div>
 							
-							<input type="submit" value="Enviar">
+							<input type="submit" value="Enviar"> -->
 				
+			</div>
 			</form>	
 
-			</div>
+			
 			
 		</body>
-		</html>
+</html>
