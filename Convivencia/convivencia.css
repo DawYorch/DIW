@@ -35,9 +35,20 @@
 
 }
 
+.form-check-label{
+	
+	width:inherit;
+	
+}
+
+.form-check-input{
+	
+	margin-top:3px;
+}
+
 div label{
 
-    width:35%;
+    
     
    
   }
