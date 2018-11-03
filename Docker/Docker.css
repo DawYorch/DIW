@@ -1,0 +1,88 @@
+.estilo{
+	
+	font-family:Helvetica;
+	width:880px;
+	
+}
+
+
+.italic{
+	
+	
+	font-style: italic;
+
+}
+
+.tomo{
+		
+		color:gray;
+	    font-size: 14px;
+		padding-left:125px;	
+		line-height: 1.7;		
+}
+
+
+.icon{
+
+
+    padding-right: 6px;
+    padding-left: 6px;
+
+
+
+}
+
+.etiqueta{
+	
+	padding-top:10px;
+	
+	
+}
+
+
+.miniatura{
+	
+
+	color:gray;
+	font-size: 11px;
+	font-style: italic;
+	padding-right:30px;
+	padding-left:8px;
+}
+
+
+
+
+.tipo1{
+	
+	float:left;
+	padding:20px;
+	
+}
+
+
+
+
+
+.blue{
+	
+	color: blue;
+
+}
+
+.continue{
+	
+	color:blue;
+	font-size: 15px;
+	float:right;	
+
+	
+}
+
+.vinculoYo{
+	
+	text-decoration:none;
+	padding-right: 6px;
+    padding-left: 6px;	
+	
+}
