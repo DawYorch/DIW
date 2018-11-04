@@ -1,1 +1,65 @@
-AA
+.conjunto{
+	
+	width:225px;
+	height:700px;
+	
+	
+	
+}
+
+.topics, .codes{
+	
+	font-family:arial;
+	font-size:30px;
+	font-weight:bold;
+	padding-left:5px;
+	padding-top:4px;
+	
+}
+
+.codes{
+	font-size:18px;	
+	color:blue;
+}
+
+.prosa{
+	
+	padding-left:5px;
+	font-size:16px;
+	line-height:26px;
+}
+
+table{
+	
+	width:100%;
+	font-style:oblique;
+	height:180px;
+	
+}
+
+tr td{  //A los tr solos no les aplica borders
+	
+	border-top: 1px dotted grey;
+	
+}
+
+tr th{
+	
+	font-size:14px;
+	font-family:arial;
+	text-align:left;
+}
+
+td:first-child{
+	
+	font-size:15px;
+	
+	
+}
+
+td:last-child{
+	
+	font-size:14px;
+	text-align:right;
+	
+}
