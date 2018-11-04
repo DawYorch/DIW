@@ -1,0 +1,61 @@
+.grupo{
+	
+	width:70%;
+	padding:15px 25px;
+	font-family:arial;
+}
+.obama, .chica, .oscar{
+	
+	float:left;
+}
+
+.cab1{
+	
+	font-size:14px;
+	font-weight:bold;
+	margin-left:70px;
+	
+}
+
+a{
+	
+	text-decoration:none;
+}
+
+.correo{
+	
+	font-size:10px;
+	color:grey;
+	margin-left:5px;
+	
+}
+
+.uno, .dos, .tres{
+	
+	margin-left:20px;
+	float:left;
+	width:30%;
+}
+
+
+
+.twi{
+	
+	padding:3px;
+	float:right;
+	
+}
+
+.texto1{
+	
+	color:grey;
+	font-size:12px;
+	margin-left:70px;
+	line-height:16px;
+	
+}
+
+.azul{
+	
+	color:#00ccff;
+}
