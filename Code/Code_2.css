@@ -1,0 +1,30 @@
+.contenedor{
+
+    height:60%;
+    width:80%;
+    background-color:cornflowerblue;
+    
+
+}
+
+.imgIzq{
+
+    float:left;
+    
+}
+
+.textArr{
+
+float:right;
+width:450px;
+line-height: 30px;
+
+}
+
+.arriba, .abajo{
+
+    padding:30px;
+    height:49%;
+    
+
+}
