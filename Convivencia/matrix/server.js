@@ -1,3 +1,6 @@
+
+
+
 const express = require('express');
 const bodyParser = require('body-parser');
 
@@ -49,3 +52,6 @@ require('./app/routes/incidencia.routes.js')(app);
 app.listen(3000,() => {
     console.log(" * Server EUW UP and Running");
 });
+
+
+/* http://localhost:3000/  para arrancar*/

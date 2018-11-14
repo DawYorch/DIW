@@ -16,6 +16,9 @@ exports.create = (req,res)=>{
         grupo: req.body.grupo || "Sin profesion",
         profe: req.body.profe|| "42",
         horari: req.body.horari  || "21"
+
+
+        
     })
 
     incidencia.save().then(data =>{
