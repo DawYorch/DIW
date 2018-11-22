@@ -67,22 +67,6 @@ const IncidenciaSchema = mongoose.Schema({
     enviar:String, //El enviar tambien ??
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 },{
     timestamps:true
 });
