@@ -1,9 +1,6 @@
-
-
-
 const express = require('express');
 const bodyParser = require('body-parser');
-
+const path = require("path");
 const app = express();
 
 // Utilizaremos body-parser para "parsear lo que nos pidan"
@@ -31,12 +28,14 @@ mongoose.connect(dbConfig.url,{
         process.exit();
     });
 
+// Paginas publicas (estaticas)
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Vamos a definir un "punto de inicio" 
 // Es la respuesta que daremos si no indicamos
 // ninguna ruta. localhost:3000
 app.get('/',(req,res)=>{
-    res.json({"message":"Bienvenido al desierto de lo real"});
+    res.sendFile(path.join(__dirname, 'public/index.html'));
 });
 
 // Require Investigadores routes
