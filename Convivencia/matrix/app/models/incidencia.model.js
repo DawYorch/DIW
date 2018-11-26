@@ -22,8 +22,8 @@ const IncidenciaSchema = mongoose.Schema({
     opF:String,
     InicioSuspF:String,
     FinalSuspF:String,
-    btLleu:String, //Pongo los botones ???
-    btGreu:String,
+    // btLleu:String, //Pongo los botones ???
+    // btGreu:String,
     tipLleu01:String,  
     tipLleu02:String,
     tipLleu03:String,
@@ -65,6 +65,7 @@ const IncidenciaSchema = mongoose.Schema({
     ePad:String,
     fechaHoy:String,
     enviar:String, //El enviar tambien ??
+    gravedad:String,
 
 
 },{
