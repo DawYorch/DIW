@@ -3,9 +3,6 @@ function cargar(){
     document.getElementById("btLleu").addEventListener("click", muestraLeves , false);
     document.getElementById("btGreu").addEventListener("click", muestraGraves , false);
 
-
-
-
 }
 
 function muestraLeves(){
@@ -17,9 +14,9 @@ function muestraLeves(){
 
 function muestraGraves(){
 
-    document.getElementById("leves").style.display = "none";
-    document.getElementById("graves").style.display = "block";
-    gravedad("Grave");
+        document.getElementById("leves").style.display = "none";
+        document.getElementById("graves").style.display = "block";
+        gravedad("Grave");
 }
 
 function gravedad(nivel){
