@@ -13,6 +13,7 @@ module.exports = (app) => {
     // Update a incidencias with incidenciaId
     app.put('/incidencias/:incidenciaId', incidencias.update);
 
+    //
     
     // Delete a incidencias with incidenciaId
     app.delete('/incidencias/:incidenciaId', incidencias.delete);

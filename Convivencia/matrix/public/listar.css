@@ -1,5 +1,84 @@
-li{
+.contenedor{
 
-color: blueviolet;
+  width:952px;
 
 }
+
+.Cabecera, #divLista, .listado{
+
+    width:100%;
+  }
+
+ #divLista{
+
+    border: solid rgb(219, 219, 219) 1px;
+    border-radius: 4px;
+
+ } 
+
+/* #divLista div{
+
+    float:left;
+
+} 
+
+ .Cabecera div{
+
+    float:left;
+
+}
+
+Con el siguiente estilo nos ahorramos los anteriores */
+
+.contenedor div{
+                            
+    float:left;
+}
+/* .container-fluid{
+    position: relative;
+    left: calc(50% - 450px);
+    width: 900px;
+} */
+
+.Cabecera{
+
+    background-color: white;
+    border:none;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+
+
+.divAlumno, .cabezAl{
+
+    padding-left: 10px;
+
+}
+
+.divAlumno, .divProfe, .divGravedad, .cabezAl, .cabezProf, .cabezGrav{
+
+    width:250px;
+    height: 30px;
+    padding-top: 5px;
+
+}
+
+.divEnlace{
+    width:200px;
+}
+
+.divEnlace a{
+
+    padding-right: 15px;
+    float:right;
+
+}
+
+#divLista .divListar:nth-child(odd) {
+    background-color: rgb(219, 219, 219);
+  }
+  
+#divLista .divListar:nth-child(even) {
+    background-color: #cecece;
+  }
