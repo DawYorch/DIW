@@ -10,11 +10,11 @@ $.getJSON( "incidencias", function( data ) {
     " TIPO: "+val.gravedad+"<a href="+"http://localhost:3000/Convivencia2.html?analid="+val._id+"> Ver Incidencia </a></li>" );
   });
  
+  
   $( "<ul/>", {
+
     "class": "list-group",
     html: items.join( "" )
   }).appendTo( "#divLista" );
 });
 
-adadada
-adadaada

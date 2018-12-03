@@ -7,6 +7,8 @@ function cargar(){
 
 function muestraLeves(){
 
+    
+
         document.getElementById("leves").style.display = "block";
         document.getElementById("graves").style.display = "none";
         gravedad("Leve");
