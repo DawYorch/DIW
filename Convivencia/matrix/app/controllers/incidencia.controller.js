@@ -34,8 +34,7 @@ exports.create = (req,res)=>{
 		opF: req.body.opF || "No especificado",
 		InicioSuspF: req.body.InicioSuspF  || "00/00/0000",
 		FinalSuspF: req.body.FinalSuspF || "00/00/0000",
-		// btLleu:String, //Pongo los botones ???
-		// btGreu:String,
+
 		
 		
 		tipLleu01: req.body.tipLleu01 || false,  

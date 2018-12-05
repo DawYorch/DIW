@@ -1,6 +1,6 @@
 .contenedor{
 
-  width:952px;
+  width:932px;
   position:relative;
   top:50px;
 }
@@ -62,22 +62,48 @@ Con el siguiente estilo nos ahorramos los anteriores */
 
 }
 
-.divAlumno, .divProfe, .divGravedad, .cabezAl, .cabezProf, .cabezGrav, .divEnlace{
+.divAlumno, .divProfe,  .cabezAl, .cabezProf{
 
-    width:250px;
+    width:230px;
     height: 30px;
     padding-top: 5px;
 
 }
 
-.divEnlace{
-    width:200px;
+.cabezFecha, .divFecha{
+
+    width:250px;
+    height: 30px;
+    padding-top: 5px;
+    padding-left: 55px;
+
 }
+
+.divGravedad, .cabezGrav{
+
+    width:90px;
+    height: 30px;
+    padding-top: 5px;
+ 
+
+}
+
+.cabezEditar, .divEnlace{
+
+    width:130px;
+    height: 30px;
+    padding-top: 5px;  
+
+}
+
+
 
 .divEnlace a{
 
-    padding-right: 50px;
-    float:right;
+
+    /* float:right; */
+    font-size: 13px;
+    padding-right: 10px;
 
 }
 
