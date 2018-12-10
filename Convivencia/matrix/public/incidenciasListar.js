@@ -11,7 +11,7 @@ $.getJSON( "incidencias", function( data ) {
                 "<div class='divProfe'> "+ val.profe + "</div>"+
                 "<div class='divGravedad'> "+val.gravedad+ "</div>"+
                 "<div class='divFecha'> "+ "</div>"+
-                "<div class='divEnlace'><a href="+"Convivencia2.html?analid="+val._id+"> Ver Incidencia </a></div>"+
+                "<div class='divEnlace'><a href="+"Convivencia2.html?"+val._id+"> Ver Incidencia </a></div>"+
                 "</div>" );
   });
  

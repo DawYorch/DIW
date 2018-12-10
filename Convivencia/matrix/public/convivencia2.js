@@ -1,39 +1,34 @@
+function rellenaDatos() {
 
-function cargar(){
-    document.getElementById("btLleu").addEventListener("click", muestraLeves , false);
-    document.getElementById("btGreu").addEventListener("click", muestraGraves , false);
+    var incID = window.location.search.substr(1);
 
-}
 
-function muestraLeves(){
+    /*
+    function imprimecosas(datos){
+        console.log(datos);
+    }
 
+    function mismovidas(data){
+        $.each(data, imprimecosas(data));
+    }
+
+    $.getJSON( "incidencias/"+incID, mismovidas(data));
+
+    */
     
-
-        document.getElementById("leves").style.display = "block";
-        document.getElementById("graves").style.display = "none";
-        gravedad("Leve");
-}
-
-function muestraGraves(){
-
-        document.getElementById("leves").style.display = "none";
-        document.getElementById("graves").style.display = "block";
-        gravedad("Grave");
-}
-
-function gravedad(nivel){
-
-    var falta = document.getElementById("gravedad");
-
-    falta.value =  nivel;
-
+    $.getJSON( "incidencias/"+incID, function( data ) {
+      
+          $.each( data, function( key, val ) {
+              console.log(key+":"+val);
+              // Busca mediante JQuery los inputs que tenga 
+              // ese name 
+              $( "input[name="+key+"]" ).val( val );
+            }
+    )});
+    
 }
 
 
 
 
-
-
-
-
-document.addEventListener("DOMContentLoaded" , cargar , false);
+document.addEventListener("DOMContentLoaded" , rellenaDatos , false);
