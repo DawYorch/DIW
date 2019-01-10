@@ -22,7 +22,7 @@
 
 @media (min-width: 800px) {
     .container {
-    display:flex;
+      display:flex;
       justify-content: flex-end;
     }
 } 
