@@ -18,16 +18,26 @@
 
 .header {
     grid-area: h;
+    background-color: brown;
 }
 
 .menu {
     grid-area: m;
+    background-color: burlywood;
 }
 
 .content {
     grid-area: c;
+    background-color: coral;
 }
 
 .footer {
    grid-area: f;
+   background-color: rgb(160, 133, 24);
+}
+
+.gallete{
+   
+    background-color: hotpink;
+
 }
