@@ -1,0 +1,74 @@
+/* .container {
+    display: grid;    
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 50px 350px 50px;
+    grid-gap: 5px;
+} */
+
+.contenedor_total {
+    display: grid;
+    grid-gap: 5px;    
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 200px 650px;
+    grid-template-areas:
+        "h h h h h h h h h h h h"
+        "m m g g g g g g g g n n"
+        "m m g g g g g g g g n n"
+        "m m g g g g g g g g n n"
+        "m m g g g g g g g g n n"
+        "f f f f f f f f f f f f";       
+}       
+
+header {
+
+    grid-area: h;
+    background-color: brown;
+    text-align: center;
+    color:white;
+}
+
+.banquillo {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 52px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "i i i"
+        "i i i"
+        "i i i"
+        "i i i"
+        "i i i"
+        "i i i"
+        "i i i"
+        "i i i"
+        "i i i"
+        "i i i"; 
+    
+
+    grid-area: m;
+    column-span: 2;
+    background-color: burlywood;
+}
+
+.equipos {
+
+    grid-area: f;
+    background-color: rgb(52, 184, 26);
+}
+
+.futbolista{
+
+    grid-row: 5;
+    grid-column: 1;
+    /* grid-area: i; */
+}
+
+img{
+    display: block; 
+    width: 100%;
+    /* grid-area: i; */
+
+  
+
+
+}
