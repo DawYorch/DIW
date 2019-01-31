@@ -1,69 +1,267 @@
-/* .container {
-    display: grid;    
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 50px 350px 50px;
-    grid-gap: 5px;
-} */
 
 .contenedor_total {
     display: grid;
-    grid-gap: 5px;    
+    grid-gap: 3px;    
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 200px 650px;
+    grid-template-rows: 150px 520px 50px;
     grid-template-areas:
         "h h h h h h h h h h h h"
         "m m g g g g g g g g n n"
-        "m m g g g g g g g g n n"
-        "m m g g g g g g g g n n"
-        "m m g g g g g g g g n n"
-        "f f f f f f f f f f f f";       
-}       
+        "f f f f f f f f f f f f";  
+        
+        color: rgb(163, 101, 128);  
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;
+}
+
+.footer{
+
+    grid-area: f;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "j j j j j j j j j j j j";
+    height: 30px;
+    background-image:url("fondoCabeceraB.jpg");
+    background-size:contain;
+    border:solid white 2px;
+    border-radius:50px 50px 0px 0px;
+    color: white;
+}
+
+.flecha{
+
+    /* grid-area:j; */
+    font-size: 20px;
+    
+
+}
+
+#izq{
+
+    grid-column: 5;
+    width: 0; 
+    height: 0; 
+    border-right: 30px solid rgba(129, 55, 21, 0.89);;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+}
+#numP{
+
+    grid-column: 7;
+    background-color: rgba(129, 55, 21, 0.89);;
+    width:40px;
+    border:solid rgba(129, 55, 21, 0.89) 2px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+#der{
+
+    grid-column: 9;
+    width: 0; 
+    height: 0; 
+    border-left: 30px solid rgba(129, 55, 21, 0.89);;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+}
+
+.listado{
+
+    display:grid;
+    grid-area: n;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30px 1fr 1fr 1fr 1fr 1fr 1fr 20px;
+    background-image:url("fondoCabeceraB.jpg");
+    background-size:contain;
+    padding-top: 20px;
+    border:solid white 2px;
+    border-radius:50px 0px 0px 50px;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "l"
+    "l"
+    "l"
+    "l"
+    "l"
+    "l"
+    "l"
+    "l"
+    "l"
+    "l";    
+
+}
+
+.productos{
+
+    display:grid;
+    grid-area: g;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr;
+    background-image:url("fondoMenuB.jpg");
+    padding-left: 120px;
+    padding-top: 25px;
+    grid-row-gap: 15px; 
+    /* opacity: 0.2; */
+    /* background-color: rgba(14, 13, 13, 0.5);
+    filter:brightness(0.1); */
+    border:solid white 2px;
+    border-radius: 50px;
+    /* grid-template-columns:auto;
+    grid-template-rows: auto; */
+    grid-template-areas:
+    "p p p"
+    "p p p"
+    "p p p";
+}
+
+.elementoProducto{
+
+    grid-area: p; 
+    /* height: 30px;
+    width: 40px; */
+
+}
+
+.elementoProducto img{
+
+    height: 150px;
+    width: 200px;
+
+}
 
 header {
 
     grid-area: h;
-    background-color: brown;
-    text-align: center;
-    color:white;
-}
-
-.banquillo {
-
+    background-image:url("fondoCabeceraB.jpg");
+    background-size:contain;
+    /* background-position: 20px; */
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 52px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "c c c c c"
+        "c c c c c"
+        "c c c c c";
+   
+}
+
+#cabecera{
+
+    grid-area: c;
+    background-color: rgba(245, 238, 241, 0.829);  
+    grid-column: 3;
+    grid-row: 2;
+    border: solid #f29076 2px;  /* #f25329   #f29076*/
+    border-radius: 20px;
+    height: 70px;
+    width: 820px;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 55px;
+
+}
+
+.menu {
+
+    /*background-image:url("fondoMenuB.jpg");*/
+    background-image:url("fondoCabeceraB.jpg"); 
+    background-size:contain;  /*auto|length|cover|contain|initial|inherit */
+    /* background-repeat: repeat-y; */
+    /* background-position: 20px; */
+    border:solid white 2px;
+    border-radius:0px 50px 50px 0px;
+    padding-top: 50px;
+    padding-left: 7px;
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: auto;
+
     grid-template-areas:
-        "i i i"
-        "i i i"
-        "i i i"
-        "i i i"
-        "i i i"
-        "i i i"
-        "i i i"
-        "i i i"
-        "i i i"
-        "i i i"; 
+        "i"
+        "i"
+        "i"
+        "i"
+        "i"
+        "i"
+        "i"
+        "i"; 
     
-
     grid-area: m;
-    column-span: 2;
-    background-color: burlywood;
+    
+    /* column-span: 2; */
+    /* background-color: burlywood; */
 }
 
-.equipos {
-
-    grid-area: f;
-    background-color: rgb(52, 184, 26);
+.elementoMenu{
+    /*display: block;*/
+    /* grid-row: 2; */
+    /* grid-column: 1; */
+    /*grid-area: i; */
+    height: 30px;
+    width: 95%;
+    padding-top: 3%;
+    text-align: center;
+    background-color: rgba(129, 55, 21, 0.89);   /*rgb(243, 231, 236)*/
+    color:pink;
+    border:solid white 2px;
+    border-radius:10px;
 }
 
-.futbolista{
+.elementoListado{
 
-    grid-row: 5;
-    grid-column: 1;
-    /* grid-area: i; */
+    height: 20px;
+    width:inherit;
+    /* padding-top: 2px; */
+    text-align: center;
+    /* padding-left: 10px; */
+    background-color: rgba(226, 166, 87, 0.918);
+    border:solid rgba(241, 238, 238, 0.849) 2px;
+    border-radius:5px;
+    color: rgba(129, 55, 21, 0.89);
+    line-height: 100%
+
 }
 
-img{
+#elP01{   
+    grid-row: 1;
+    grid-column:1;
+}
+#elP02{   
+    grid-row: 1;
+    grid-column:2;
+}
+#elP03{   
+    grid-row: 1;
+    grid-column:3;
+}
+#elP04{   
+    grid-row: 2;
+    grid-column:1;
+}
+#elP05{   
+    grid-row: 2;
+    grid-column:2;
+}
+#elP06{   
+    grid-row: 2;
+    grid-column:3;
+}
+#elP07{   
+    grid-row: 3;
+    grid-column:1;
+}
+#elP08{   
+    grid-row: 3;
+    grid-column:2;
+}
+#elP09{   
+    grid-row: 3;
+    grid-column:3;
+}
+
+/* img{
     display: block; 
     width: 100%;
     /* grid-area: i; */
@@ -71,4 +269,26 @@ img{
   
 
 
+/* } */ 
+
+
+/*
+#elM01{   
+    grid-row: 2;
 }
+#elM02{   
+    grid-row: 3;
+}
+#elM03{   
+    grid-row: 4;
+}
+#elM04{   
+    grid-row: 5;
+}
+#elM05{   
+    grid-row: 6;
+}
+#elM06{   
+    grid-row: 7;
+}
+*/
