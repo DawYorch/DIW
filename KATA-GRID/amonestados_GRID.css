@@ -1,0 +1,86 @@
+.contenedor{
+
+    display: grid;
+    grid-gap: 3px;    
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 50px 650px;
+    grid-template-areas:
+        "s s h h h h h h h h h h"
+        "d d d d d d d d d d d d";  
+        
+    color: rgb(163, 101, 128);  
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+
+}
+
+header{
+
+    grid-area: h;
+    background-color: black;
+    color:red;
+    padding-left: 40px;
+    padding-top: 15px;
+}
+
+#alumnos{
+
+    grid-area: s;
+    
+}
+
+#amonestados{
+
+    grid-area:d;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 650px;
+    grid-template-areas:
+       "a a a a a a a a a a a a";
+
+    padding-top:30px;   
+}
+
+
+.alumno{
+
+        grid-area: a;
+        border:solid 1px purple;
+        border-radius: 10px;
+        height: 100px;
+        width:100px;
+        text-align: center;
+        line-height:100px;
+}
+
+/*#a{
+    grid-column:3;
+}
+#b{
+    grid-column:4;
+}
+#c{
+    grid-column:5;
+}
+#d{
+    grid-column:6;
+}
+#e{
+    grid-column:7;
+}
+#f{
+    grid-column:8;
+}
+#g{
+    grid-column:9;
+}
+#h{
+    grid-column:10;
+}
+#i{
+    grid-column:11;
+}
+#j{
+    grid-column:12;
+}
+*/
